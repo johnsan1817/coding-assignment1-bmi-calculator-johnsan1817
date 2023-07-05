@@ -15,7 +15,7 @@ app.post('/', (req, res) => {
     var weight = parseFloat(req.body.weight);
     var BMI = weight / (height ** 2);
     var result = '';
-    if (BMI < 18.8) {
+    if (BMI < 18.1) {
         result = 'Underweight';
     } else if (BMI >= 18.5 && BMI < 25) {
         result = 'Normal weight';
